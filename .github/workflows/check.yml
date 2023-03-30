@@ -4,12 +4,12 @@ on:
     branches:
       - main
       - open_file_branch
-      - loop_for_info
+      - print_values
   pull_request:
     branches:
       - main
       - open_file_branch
-      - loop_for_info
+      - print_values
 
 jobs:
   build:
