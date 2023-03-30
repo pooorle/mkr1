@@ -1,7 +1,10 @@
 name: Check
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - open_file_branch
+      - loop_for_info
   pull_request:
     branches:
       - main
