@@ -28,3 +28,6 @@ jobs:
         run: flake8 .
       - name: Run mypy
         run: mypy .
+      - name: Test pytest
+        run: |
+          pytest
