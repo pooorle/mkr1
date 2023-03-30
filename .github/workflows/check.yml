@@ -3,7 +3,10 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
+      - open_file_branch
+      - loop_for_info
 
 jobs:
   build:
