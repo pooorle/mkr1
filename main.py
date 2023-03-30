@@ -10,3 +10,4 @@ with open(filename, 'r') as file:
             data[country] = {year: population}
         else:
             data[country][year] = population
+            
