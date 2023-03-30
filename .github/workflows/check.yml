@@ -30,4 +30,11 @@ jobs:
         run: mypy .
       - name: Test pytest
         run: |
-          pytest
+          pytest --html=report.html --self-contained-html
+        env:
+          PYTHONPATH: ${{github.workspace}}
+      - name: Archive HTML report
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-report
+          path: report.html
